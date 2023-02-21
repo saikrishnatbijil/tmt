@@ -1,0 +1,32 @@
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--main-dark), #d280396f),
+                url('../../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
+}
+
+.mainHeading {
+    color: white;
+    font-size: 50px;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-top: 30%;
+    }
+    .mainHeading {
+        font-size: 30px;
+    }
+}

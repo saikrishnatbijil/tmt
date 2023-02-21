@@ -1,0 +1,19 @@
+
+.services-section {
+    width: 100%;
+    background-color: var(--main);
+    text-align: center;
+}
+
+.servicesHeading {
+    color: white;
+    padding-top: 3%;
+}
+
+.card-group {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

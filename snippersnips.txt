@@ -1,0 +1,8 @@
+
+
+ <card> 
+<div className='cardBody'>
+        <img className='image' src={car} alt="car" /> 
+        <h1>Rent a Car</h1>
+    </div>
+ </card>

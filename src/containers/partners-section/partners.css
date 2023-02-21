@@ -1,0 +1,51 @@
+
+.partners-section {
+    width: 100%;
+    height: 55vh;
+    background: linear-gradient(var(--brown), rgba(43, 0, 0, 0.459)),
+                url('../../assets/partners.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.partners-title {
+    color: white;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+.partner {
+    width: fit-content;
+    background-color: var(--main);
+    padding: 5%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.partner h1 {
+    color: var(--purple);
+}
+
+.partner h3 {
+    color: white;
+}
+
+@media (max-width:700px) {
+    .partners-title {
+        font-size: 25px;
+    }
+    .partner {
+        padding: 5%;
+        margin: 20px;
+    }
+    .partner h1 {
+        font-size: 18px;
+    }
+    .partner h3 {
+        font-size: 14px;
+    }
+}
