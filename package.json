@@ -1,6 +1,6 @@
 {
   "name": "tmt_website",
-  "homepage": "https://github.com/saikrishnatbijil/tmt/tmt",
+  "homepage": "https://github.com/saikrishnatbijil/tmt/",
   "version": "0.2.1",
   "private": true,
   "dependencies": {

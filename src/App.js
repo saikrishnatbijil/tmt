@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/tmt' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/contactus' element={<ContactUs />} />
       </Routes>
     </>
