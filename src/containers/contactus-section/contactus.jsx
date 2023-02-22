@@ -11,10 +11,9 @@ function contactus() {
         <h2>ALKHOR,DOHA,QATAR</h2>
         <div className="mobile">
           <h3>Call :-</h3>
-          <h4>55178108 MR. ABDUL KAREEM VELUTHEDATH</h4>
+          <h4>55732486 Mohammed Shameem</h4>
           <h4>55732486 MANAGING DIRECTOR</h4>
           <br />
-          <h4>33989569 MR. SOORAJ</h4>
           <h4>33600582 PROJECT MANAGER</h4>
           <br />
           <h4>55021554 MR.MAHAROOF</h4>
