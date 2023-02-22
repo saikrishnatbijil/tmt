@@ -12,12 +12,12 @@ function contactus() {
         <div className="mobile">
           <h3>Call :-</h3>
           <h4>55732486 Mohammed Shameem</h4>
-          <h4>55732486 MANAGING DIRECTOR</h4>
+          <h4>97474974 MANAGING DIRECTOR</h4>
           <br />
-          <h4>33600582 PROJECT MANAGER</h4>
+          <h4>97474974 PROJECT MANAGER</h4>
           <br />
-          <h4>55021554 MR.MAHAROOF</h4>
-          <h4>55358006 CUSTOMER CARE & MAINTENANCE MANAGER</h4>
+          <h4>33703636 MR.MAHAROOF</h4>
+          <h4>97474974 CUSTOMER CARE & MAINTENANCE MANAGER</h4>
         </div>
       </div>
     </div>
