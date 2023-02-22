@@ -1,10 +1,12 @@
 import './App.css';
 import { Home, ContactUs } from './pages'
 import { Route, Routes } from 'react-router-dom';
+import { Navbar } from './components';
 
 function App() {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path='/tmt' element={<Home />} />
         <Route path='/contactus' element={<ContactUs />} />
