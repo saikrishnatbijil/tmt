@@ -23,7 +23,7 @@ function navbar() {
         <ul id='navLinks'>
           <div className="close" onClick={hideMenu}></div>
           <li><a href="/tmt">HOME</a></li>
-          <li><a href="/tmt/contactus">CONTACT US</a></li>
+          <li><a href="/contactus">CONTACT US</a></li>
         </ul>
         <div className="open" onClick={showMenu}></div>
       </div>
