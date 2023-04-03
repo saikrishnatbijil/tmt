@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 import logo from '../../assets/logo.png'
 
-function navbar() {
+function navbar({ handleSwitch }) {
 
   function showMenu() {
     var navLinks = document.getElementById("navLinks");
@@ -22,8 +22,8 @@ function navbar() {
         <a href="/"><img src={logo} alt="TMT PROPERTIES" /></a>
         <ul id='navLinks'>
           <div className="close" onClick={hideMenu}></div>
-          <li><a href="/tmt">HOME</a></li>
-          <li><a href="/contactus">CONTACT US</a></li>
+          <li><p onClick={()=>handleSwitch(true)}>HOME</p></li>
+          <li><p onClick={()=>handleSwitch(false)}>CONTACT US</p></li>
         </ul>
         <div className="open" onClick={showMenu}></div>
       </div>

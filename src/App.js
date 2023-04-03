@@ -1,16 +1,19 @@
+import { useState } from 'react';
 import './App.css';
 import { Home, ContactUs } from './pages'
-import { Route, Routes } from 'react-router-dom';
+import { Navbar } from './components';
 
 function App() {
+  const [isHome, setIsHome] = useState(true)
+
+  const handleSwitch = (state) => {
+    setIsHome(state)
+  }
+
   return (
     <>
-      {/* <Home />
-      <ContactUs /> */}
-      <Routes> 
-        <Route path='/tmt' element={<Home />} />
-        <Route path='/tmt/contactus' element={<ContactUs />} />
-      </Routes>
+      <Navbar handleSwitch={handleSwitch}/>
+      {isHome ? <Home /> : <ContactUs />}
     </>
   );
 }
