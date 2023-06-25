@@ -1,12 +1,11 @@
 import React from 'react'
 import './card.css'
-import car from '../../assets/rent-a-car.jpg'
 
 function card(props) {
     return (
         <>
             {props.details.map((value, index) => (
-                <div className='cardBody'>
+                <div className='cardBody' onClick={() => props.triggerer(value.title)}>
                     <img className='image' src={value.img} alt={value.title} />
                     <h1>{value.title}</h1>
                 </div>
