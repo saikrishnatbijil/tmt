@@ -1,5 +1,5 @@
 
-.cardBody {
+.specCardBody {
     width: 400px;
     height: 80px;
     overflow: hidden;
@@ -10,25 +10,25 @@
     margin: 20px;
 }
 
-.cardBody:hover {
+.specCardBody:hover {
     opacity: 0.8;
 }
 
-.cardBody h1 {
+.specCardBody h1 {
     position: absolute;
-    font-size: 120%;
+    font-size: 180%;
     color: white;
 }
 
-.image {
+.specImage {
     width: 100%;
     border-radius: 20px;
-    filter: brightness(50%);
+    filter: brightness(0%);
 }
 
 @media (max-width: 650px) {
-    .cardBody h1 {
-        font-size: 90%;
+    .specCardBody h1 {
+        font-size: 140%;
     }
 
 }

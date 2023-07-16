@@ -7,3 +7,16 @@
     </div>
  </card>
 
+
+
+ <old func> 
+  function cardsTriggered(card, subServices) {
+    console.log('Hello :: '+card)
+    setClickedService(card)
+    setClickedServiceServices(subServices)
+    const modal = document.querySelector("[data-model]");
+    if (modal) {
+      modal.showModal();
+    }
+  }
+ </old func>

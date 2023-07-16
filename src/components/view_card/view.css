@@ -1,6 +1,47 @@
 
 .viewCardContainer {
+    width: 90%;
+    height: 90%;
     margin: auto;
     background: #FFF;
+    border: none;
+    border-radius: 30px;
+}
+
+.closer {
+    width: fit-content;
+    aspect-ratio:  1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    background: #EFEFEF;
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+}
+
+.closer:hover {
+    background-color: #c3c3c3;
+}
+
+.headingInViewCard {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.cardsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width: 700px) {
+    .headingInViewCard {
+        margin-top: 30%;
+    }
     
 }

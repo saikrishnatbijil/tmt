@@ -1,17 +1,29 @@
+import { useState } from 'react'
 import React from 'react'
 import './service.css'
 import { Card, ViewCard } from '../../components'
 import servicesData from '../../servicesData'
 
-function service() {
+function Service() {
+  const [clickedService, setClickedService] = useState('')
+  const [clickedServiceServices, setClickedServiceServices] = useState([])
 
-  function cardsTriggered(card) {
-    console.log('Hello :: '+card)
+  function cardsTriggered(card, subServices) {
+    if(card === 'Real-Estate') {
+      console.log('Hello :: '+card)
+      setClickedService(card)
+      setClickedServiceServices(subServices)
+      const modal = document.querySelector("[data-model]");
+  
+      if (modal) {
+        modal.showModal();
+      }
+    }
   }
 
   return (
     <>
-    <ViewCard />
+    <ViewCard name={clickedService} subServices={clickedServiceServices}/>
     <div className='services-section'>
         <h1 className='servicesHeading'>Our Services.</h1>
         <div className="card-group">
@@ -22,4 +34,4 @@ function service() {
   )
 }
 
-export default service
+export default Service

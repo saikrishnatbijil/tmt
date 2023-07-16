@@ -1,21 +1,45 @@
-import React from 'react'
-import './view.css'
+import React, { useState } from "react";
+import "./view.css";
+import { CarouselCard, SpecCard } from "..";
 
-function view() {
-    function show() {
-        const modal = document.querySelector('[data-model]');
-        if (modal) {
-          modal.showModal();
-        }
-      }
+function View({ name, subServices }) {
+  const [isImageView, setIsImageView] = useState(false);
+
+  const [currentImgs, setCurrentImgs] = useState([]);
+  const [currentName, setCurrentName] = useState("");
+
+  function hide() {
+    const modal = document.querySelector("[data-model]");
+    if (modal) {
+      modal.close();
+    }
+  }
+  function triggerer(title, subServices, images) {
+    setCurrentImgs(images);
+    setCurrentName(title);
+    setIsImageView(true);
+  }
   return (
     <>
-    <button id='btn' onClick={show}>Click me</button>
-    <dialog data-model className='viewCardContainer'>
-        view
-    </dialog>
+      <dialog data-model className="viewCardContainer">
+        {isImageView ? (
+          <CarouselCard viewTriggerer={setIsImageView} name={currentName} imgArray={currentImgs}/>
+        ) : (
+          <>
+            <div className="closer" onClick={hide}>
+              <span className="material-symbols-rounded">close</span>
+            </div>
+            <div className="headingInViewCard">
+              <h1>{name}</h1>
+            </div>
+            <div className="cardsContainer">
+              <SpecCard details={subServices} triggerer={triggerer} />
+            </div>
+          </>
+        )}
+      </dialog>
     </>
-  )
+  );
 }
 
-export default view
+export default View;

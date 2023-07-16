@@ -1,0 +1,40 @@
+
+
+.carouselContainer {
+    width: 100%;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    overflow-y: auto;
+    /* overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory; */
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card {
+    max-width: 80%;
+    min-height: 60%;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .carousel {
+        width: 100%;
+    }
+
+}
