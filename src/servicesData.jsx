@@ -104,7 +104,7 @@ const servicesData = [
     },
     {
         img: waste,
-        title: 'Sawage Water & Waste Removal'
+        title: 'Sewage water & Waste Removal'
     },
     {
         img: cleaning,
